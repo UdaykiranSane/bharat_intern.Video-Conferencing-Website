@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=ed">
+    <title>Video Conferencing Website</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <main>
+        
+        <h1 id="site-title"> Video Conferencing Website</h1>
+        
+        <div id="join-wrapper">
+            <input id="username" type="text" placeholder="Enter your name..."/>
+            <button id="join-btn">Join Stream</button>
+        </div>
+        <div id="user-streams" ></div>
+        <div id="footer">
+            <div class="icon-wrapper">
+                <img class="control-icon" id="camera-btn" src="data:image/png;base64,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"/>
+                <p> Camera</p>
+            </div>
+        
+        <div class="icon-wrapper">
+            <img class="control-icon" id="mic-btn" src="https://img.favpng.com/16/9/7/microphone-scalable-vector-graphics-portable-network-graphics-logo-png-favpng-AqBSvMehZeT6zqQeTaiUY4B3D.jpg">
+            <p>Mic</p>
+        </div>
+        <div class="icon-wrapper">
+            <img class="control-icon" id="leave-btn" src="https://static.thenounproject.com/png/923684-200.png"/>
+            <p>Leave</p>
+
+        </div>
+        </div>
+    </main>
+        
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+    <script src='script.js'></script>
+
+</body>
+</html>
